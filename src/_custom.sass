@@ -1,12 +1,14 @@
+$sidebar-width: 20rem !default
+$page-height: calc(100vh - 3rem) !default
 
 @mixin pages-reduced 
-  width: calc(100% - 22rem)
+  width: calc(100vw - #{$sidebar-width + 2})
   transform: translateX(20.5rem)
 
 
 //default style of a page
 @mixin pages 
   position: fixed
-  width: 99.50%
-  height: calc(100% - 3rem)
+  width: 99%
+  height: $page-height
 
