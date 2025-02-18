@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'custom'
+
+body
+    z-index: 1
+    background: rgb(246,248,250)
+
+
+.p-drawer
+    background: rgb(246,248,250) !important
+    border: none !important
+    box-shadow: none !important
+    border: 1px solid red !important
+
+.page
+    position: fixed
+    margin: 1rem 0 1rem 0
+    width: 98%
+    height: 95%
+    @include custom.pages
+
+.page.reduced
+    @include custom.pages-reduced
+
+.p-card 
+    border-radius: 1rem !important
+    height: 100%
+
