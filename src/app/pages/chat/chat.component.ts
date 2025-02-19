@@ -20,10 +20,6 @@ export class ChatComponent {
 
   userMessage: string = '';
 
-  quillModules= {
-    toolbar: false
-  }
-
   ngOnInit() {
     this._sidebarStateService.sidebarVisible$.subscribe(visible => this.sidebarVisible = visible);
   }

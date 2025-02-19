@@ -12,13 +12,12 @@
             <div class="flex flex-column h-10rem justify-content-center align-items-center">
                 <div class="flex flex-row justify-content-center align-items-center gap-2">
                     <div class="card w-30rem editor-container">
-                        <p-editor placeholder="Send a message" [(ngModel)]="userMessage" [modules]="quillModules" [style]="{ height: '5rem' }">
-                            <ng-template #header>
-                            </ng-template>
-                        </p-editor>
+                        <div placeholder="Send message" class="border-1 border-primary h-2.5rem overflow-x-auto border-round-xl text-l p-2 outline-none focus:border-2 font-light vertical-align-middle"  contenteditable="true" >
+                            
+                        </div>
                     </div>
                     <div>
-                        <button pRipple pButton [outlined]="true" icon="pi pi-send" type="button" class="w-2rem"></button>
+                        <button pRipple pButton [outlined]="true" icon="pi pi-send" type="button" class="w-2rem border-round-sm"></button>
                     </div>
                 </div>
             </div>
