@@ -11,9 +11,19 @@
             </div>
             <div class="flex flex-column h-10rem justify-content-center align-items-center">
                 <div class="flex flex-row justify-content-center align-items-center gap-2">
+                    <p-fileupload mode="basic" 
+                    name="demo[]" 
+                    chooseIcon="pi pi-upload" 
+                    url="https://www.primefaces.org/cdn/api/upload.php" 
+                    accept="image/*" maxFileSize="1000000" 
+                    chooseLabel=""
+                    (onUpload)="onBasicUploadAuto($event)" [auto]="true" />
+
                     <div class="card w-30rem editor-container">
-                        <div placeholder="Send message" class="border-1 border-primary h-2.5rem overflow-x-auto border-round-xl text-l p-2 outline-none focus:border-2 font-light vertical-align-middle"  contenteditable="true" >
-                            
+                        <div 
+                        contenteditable="true"
+                        class="flex w-full h-2.5rem max-h-4rem border-1 border-primary border-round-sm text-lg p-2 outline-none focus:border-2 font-light align-items-center overflow-y-auto white-space-pre-wrap"
+                        style="word-wrap: break-word; overflow-wrap: break-word;">
                         </div>
                     </div>
                     <div>

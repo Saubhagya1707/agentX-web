@@ -6,11 +6,13 @@ import Aura from '@primeng/themes/aura';
 import Nora from '@primeng/themes/nora';
 
 import { routes } from './app.routes';
+import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideAnimationsAsync(),
+    provideHttpClient(),
     providePrimeNG({
 
       theme: {

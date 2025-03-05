@@ -3,7 +3,8 @@
 .h-90
     height: calc( custom.$page-height - 13rem )
 
-[contentEditable=true]:empty:before
-    content: attr(placeholder)
-    opacity: 0.6
-
+[contenteditable]:empty::before
+  content: "Send message"
+  color: gray
+  pointer-events: none
+  display: block
